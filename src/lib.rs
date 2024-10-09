@@ -9,6 +9,18 @@ pub fn foo() -> u64 {
     1 + 1
 }
 
+pub struct MyStruct {
+    pub field: u64
+}
+
+#[cfg(feature = "traits")]
+#[cfg_attr(docsrs, doc(cfg(feature = "traits")))]
+impl Default for MyStruct {
+    fn default() -> Self {
+        Self { field: 0 }
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

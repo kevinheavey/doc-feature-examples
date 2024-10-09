@@ -1,6 +1,6 @@
 [package]
 name = "doc-feature-examples"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 description = "Example crate testing how features interact with docs.rs"
 license = "Apache-2.0"
@@ -8,6 +8,7 @@ repository = "https://github.com/kevinheavey/doc-feature-examples"
 documentation = "https://docs.rs/doc-feature-examples"
 
 [features]
+traits = []
 foo = []
 
 [package.metadata.docs.rs]
