@@ -9,3 +9,6 @@ documentation = "https://docs.rs/doc-feature-examples"
 
 [features]
 foo = []
+
+[package.metadata.docs.rs]
+all-features = true
