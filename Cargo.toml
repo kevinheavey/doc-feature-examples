@@ -2,7 +2,9 @@
 name = "doc-feature-examples"
 version = "0.1.0"
 edition = "2021"
+description = "Example crate testing how features interact with docs.rs"
+license = "Apache-2.0"
+repository = "https://github.com/kevinheavey/doc-feature-examples"
 
 [features]
 foo = []
-
