@@ -2,7 +2,7 @@ pub fn add(left: u64, right: u64) -> u64 {
     left + right
 }
 
-#[cfg(any(feature = "foo", doc))]
+#[cfg(feature = "foo")]
 #[cfg_attr(docsrs, doc(cfg(feature = "foo")))]
 pub fn foo() -> u64 {
     1 + 1
