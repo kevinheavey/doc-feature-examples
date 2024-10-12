@@ -8,6 +8,11 @@ pub fn foo() -> u64 {
     1 + 1
 }
 
+#[cfg(target_arch = "wasm32")]
+pub fn wasm_only_func() -> u64 {
+    1 + 1
+}
+
 pub struct MyStruct {
     pub field: u64
 }
